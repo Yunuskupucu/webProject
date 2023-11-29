@@ -120,7 +120,7 @@ section {
 /* home başlangıç */
 .home {
   min-height: 101vh;
-  background: url(banner.webp) no-repeat;
+  background: url(bg.webp) no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: -12.5rem;
