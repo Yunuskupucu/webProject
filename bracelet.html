@@ -26,23 +26,53 @@
         <a href="necklace.html">Kolye</a>
         <a href="bracelet.html">Bileklik</a>
         <a href="ring.html">Yüzük</a>
-        <a href="#">Siparişler Hakkında</a>
+        <a href="/index.html#about">Siparişler Hakkında</a>
         <a href="contact.html">İletişim</a>
       </nav>
 
       <div class="buttons">
-        <button>
+        <button id="buttonsShoping">
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
+      </div>
+      <div class="cart-items-container" id="cardContainer">
+        <div class="empty-cart-message" id="emptyCartMessage">
+          Sepetinizde ürün bulunmamaktadır.
+        </div>
+        <div class="cart-item" id="cartItem1">
+          <i class="fas fa-times" onclick="deleteCartItem('cartItem1')"></i>
+          <img src="bracelet.webp" alt="" />
+          <div class="content">
+            <h3>cart item 1</h3>
+            <div class="price">300₺</div>
+          </div>
+        </div>
+        <div class="cart-item" id="cartItem2">
+          <i class="fas fa-times" onclick="deleteCartItem('cartItem2')"></i>
+          <img src="hugring.webp" alt="" />
+          <div class="content">
+            <h3>cart item 2</h3>
+            <div class="price">300₺</div>
+          </div>
+        </div>
+        <div class="cart-item" id="cartItem3">
+          <i class="fas fa-times" onclick="deleteCartItem('cartItem3')"></i>
+          <img src="necklace.webp" alt="" />
+          <div class="content">
+            <h3>cart item 3</h3>
+            <div class="price">300₺</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Sipariş Oluşur</a>
       </div>
     </header>
     <!-- header end -->
 
-    <!-- listing bracelet start -->
-    <section class="listing">
+    <!-- listing bracelets start -->
+    <section class="listing" id="braceletsListing">
       <h1 class="heading">BİLEKLİKLER</h1>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-product-id="bracelet1">
           <div class="box-head">
             <a href="#" class="name">Parmak Bileklik</a>
           </div>
@@ -54,13 +84,16 @@
               <b class="price">₺400</b>
             </div>
             <div class="listing-btn">
-              <a href="#">
+              <a
+                href="#"
+                onclick="addToCart('bracelet1', 'Parmak Bileklik', 400, 'brace1.webp')"
+              >
                 <i class="fas fa-plus"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-product-id="bracelet2">
           <div class="box-head">
             <a href="#" class="name">Siyah Taşlı Bileklik</a>
           </div>
@@ -72,13 +105,16 @@
               <b class="price">₺400</b>
             </div>
             <div class="listing-btn">
-              <a href="#">
+              <a
+                href="#"
+                onclick="addToCart('bracelet2', 'Siyah Taşlı Bileklik', 400, 'brace2.webp')"
+              >
                 <i class="fas fa-plus"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-product-id="bracelet3">
           <div class="box-head">
             <span class="title">Yeni Sezon</span>
             <a href="#" class="name">Baget Bileklik</a>
@@ -91,7 +127,10 @@
               <b class="price">₺400</b>
             </div>
             <div class="listing-btn">
-              <a href="#">
+              <a
+                href="#"
+                onclick="addToCart('bracelet3', 'Baget Bileklik', 400, 'brace3.jpeg')"
+              >
                 <i class="fas fa-plus"></i>
               </a>
             </div>
@@ -99,7 +138,7 @@
         </div>
       </div>
     </section>
-    <!-- listing bracelet end -->
+    <!-- listing bracelets end -->
 
     <!-- footer section start -->
     <section class="footer">

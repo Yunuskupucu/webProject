@@ -26,14 +26,44 @@
         <a href="necklace.html">Kolye</a>
         <a href="bracelet.html">Bileklik</a>
         <a href="ring.html">Yüzük</a>
-        <a href="#">Siparişler Hakkında</a>
+        <a href="/index.html#about">Siparişler Hakkında</a>
         <a href="contact.html">İletişim</a>
       </nav>
 
       <div class="buttons">
-        <button>
+        <button id="buttonsShoping">
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
+      </div>
+      <div class="cart-items-container" id="cardContainer">
+        <div class="empty-cart-message" id="emptyCartMessage">
+          Sepetinizde ürün bulunmamaktadır.
+        </div>
+        <div class="cart-item" id="cartItem1">
+          <i class="fas fa-times" onclick="deleteCartItem('cartItem1')"></i>
+          <img src="bracelet.webp" alt="" />
+          <div class="content">
+            <h3>cart item 1</h3>
+            <div class="price">300₺</div>
+          </div>
+        </div>
+        <div class="cart-item" id="cartItem2">
+          <i class="fas fa-times" onclick="deleteCartItem('cartItem2')"></i>
+          <img src="hugring.webp" alt="" />
+          <div class="content">
+            <h3>cart item 2</h3>
+            <div class="price">300₺</div>
+          </div>
+        </div>
+        <div class="cart-item" id="cartItem3">
+          <i class="fas fa-times" onclick="deleteCartItem('cartItem3')"></i>
+          <img src="necklace.webp" alt="" />
+          <div class="content">
+            <h3>cart item 3</h3>
+            <div class="price">300₺</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Sipariş Oluşur</a>
       </div>
     </header>
     <!-- header end -->
