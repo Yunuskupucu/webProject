@@ -15,7 +15,7 @@ if (
 }
 
 buttonsShoping.addEventListener("click", function () {
-  console.log(cardContainer.style.display);
+  console.log(cardContainer.style.display); // Sepet butounun çalışıp çalışmadığını konsolda kontrol et
 
   // Görünürlük durumunu kontrol et
   if (cardContainer.style.display === "none") {
@@ -23,7 +23,7 @@ buttonsShoping.addEventListener("click", function () {
     cardContainer.style.display = "block";
     cardContainer.style.transition = "opacity 400ms";
     setTimeout(() => {
-      cardContainer.style.opacity = "1";
+      cardContainer.style.opacity = "1"; // sepetin görünürlüğü ve gecikme süresi
     }, 0);
   } else {
     // Kart container'ı gizle
@@ -62,10 +62,10 @@ function addToCart(productId, name, price, imageSrc) {
     imageSrc: imageSrc,
   };
 
-  // Yeni ürünü sepete ekleyen fonksiyonu çağırın
+  // Yeni ürünü sepete ekleyen fonksiyonu çağır
   addToCartArray(newItem);
 
-  // Sepetinizi güncelleyin
+  // Sepetinizi güncelle
   updateCart();
 }
 
@@ -77,14 +77,14 @@ function updateCart() {
   const cartContainer = document.getElementById("cardContainer");
   const emptyCartMessage = document.getElementById("emptyCartMessage");
 
-  // Eğer sepet boşsa, mesajı gizleyin
+  // Eğer sepet boşsa, mesajı gizle
   if (cartItems.length === 0) {
     emptyCartMessage.style.display = "block";
   } else {
     emptyCartMessage.style.display = "none";
   }
 
-  // Her bir ürün için HTML oluşturun ve sepete ekleyin
+  // Her bir ürün için HTML oluştur ve sepete ekle
   cartItems.forEach((item) => {
     const newItemHTML = `
             <div class="cart-item" id="${item.id}">
@@ -100,3 +100,4 @@ function updateCart() {
     cartContainer.insertAdjacentHTML("beforeend", newItemHTML);
   });
 }
+/* ---------------------------------------------------------------------------------------------- */
