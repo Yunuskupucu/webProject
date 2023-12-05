@@ -101,3 +101,12 @@ function updateCart() {
   });
 }
 /* ---------------------------------------------------------------------------------------------- */
+// footer'a anlık saat ve tarih bilgisi eklendi
+function tarihSaat() {
+  var date = new Date().toLocaleString("tr-TR");
+  document.getElementById("zaman").innerHTML = date;
+}
+// her 0,1 saniyede tarihSaat fonksiyonunu yeniden çalıştır
+setInterval(tarihSaat, 100);
+
+/* ---------------------------------------------------------------------------------------------- */

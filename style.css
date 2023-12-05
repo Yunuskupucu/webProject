@@ -379,7 +379,13 @@ section {
 
 .footer .share a:hover {
   /* background-color: gray; */
-  color: black;
+  color: var(--black-color);
+}
+
+.footer .time {
+  color: #fff;
+  background-color: var(--black-color);
+  text-align: center;
 }
 
 /* footer end */
