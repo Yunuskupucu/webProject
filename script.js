@@ -6,6 +6,7 @@
 const buttonsShoping = document.getElementById("buttonsShoping");
 const cardContainer = document.getElementById("cardContainer");
 
+// Sepetin görünürlük durumunu kontrol et
 if (
   cardContainer.style.display === "" ||
   cardContainer.style.display === "block"
@@ -18,19 +19,22 @@ buttonsShoping.addEventListener("click", function () {
   console.log(cardContainer.style.display); // Sepet butounun çalışıp çalışmadığını konsolda kontrol et
 
   // Görünürlük durumunu kontrol et
-  if (cardContainer.style.display === "none") {
+  if (
+    cardContainer.style.display === "none" ||
+    cardContainer.style.opacity === "0"
+  ) {
     // Kart container'ı görünür hale getir
     cardContainer.style.display = "block";
-    cardContainer.style.transition = "opacity 400ms";
+    cardContainer.style.transition = "opacity 500ms"; //opacity özelliği üzerinde geçiş efekti tanımla
     setTimeout(() => {
-      cardContainer.style.opacity = "1"; // sepetin görünürlüğü ve gecikme süresi
+      cardContainer.style.opacity = "1"; // sepetin görünürlüğü
     }, 0);
   } else {
     // Kart container'ı gizle
     cardContainer.style.opacity = "0";
     setTimeout(() => {
       cardContainer.style.display = "none";
-    }, 300);
+    }, 500);
   }
 });
 

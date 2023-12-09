@@ -20,13 +20,10 @@
 }
 
 html {
-  font-size: 62.5%;
-  /* tam sayı olması için px rem dönüşümü (10px=1rem)*/
-  overflow-x: hidden;
-  /* yatay eksende scroll bar gizleme */
+  font-size: 62.5%; /* tam sayı olması için px rem dönüşümü (10px=1rem)*/
+  overflow-x: hidden; /* yatay eksende scroll bar gizleme */
   scroll-padding-top: 9rem;
-  scroll-behavior: smooth;
-  /* geçişlerin yumuşak olması içim */
+  scroll-behavior: smooth; /* geçişlerin yumuşak olması içim */
 }
 
 body {
@@ -97,8 +94,7 @@ section {
   box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
-  z-index: 1000;
-  /* header'ın her zaman önde olması için */
+  z-index: 1000; /* header'ın her zaman önde olması için */
 }
 
 .header .navbar a {
@@ -321,7 +317,7 @@ section {
   display: flex;
   align-items: center;
   margin: 2rem 0;
-  border: thick double black;
+  border: thick double var(--black-color);
   font-size: 2rem;
 }
 
@@ -341,7 +337,7 @@ section {
 
 /* footer start */
 .footer {
-  background-color: black;
+  background-color: var(--black-color);
   text-align: center;
   height: 20rem;
 }
