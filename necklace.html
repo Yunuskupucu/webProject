@@ -35,45 +35,16 @@
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
-      <div class="cart-items-container" id="cardContainer">
-        <div class="empty-cart-message" id="emptyCartMessage">
-          Sepetinizde ürün bulunmamaktadır.
-        </div>
-        <div class="cart-item" id="cartItem1">
-          <i class="fas fa-times" onclick="deleteCartItem('cartItem1')"></i>
-          <img src="bracelet.webp" alt="" />
-          <div class="content">
-            <h3>cart item 1</h3>
-            <div class="price">300₺</div>
-          </div>
-        </div>
-        <div class="cart-item" id="cartItem2">
-          <i class="fas fa-times" onclick="deleteCartItem('cartItem2')"></i>
-          <img src="hugring.webp" alt="" />
-          <div class="content">
-            <h3>cart item 2</h3>
-            <div class="price">300₺</div>
-          </div>
-        </div>
-        <div class="cart-item" id="cartItem3">
-          <i class="fas fa-times" onclick="deleteCartItem('cartItem3')"></i>
-          <img src="necklace.webp" alt="" />
-          <div class="content">
-            <h3>cart item 3</h3>
-            <div class="price">300₺</div>
-          </div>
-        </div>
-        <a href="#" class="btn">Sipariş Oluştur</a>
-      </div>
+      <div class="cart-items-container" id="cardContainer"></div>
       <!-- Sepete elle eklenen ürünler end -->
     </header>
     <!-- header end -->
 
-    <!-- listing necklaces -->
+    <!-- listing necklaces start -->
     <section class="listing">
       <h1 class="heading">KOLYELER</h1>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-product-id="necklace1">
           <div class="box-head">
             <span class="title">Yeni Sezon</span>
             <a href="#" class="name">Ay Taşı Kolye</a>
@@ -86,13 +57,16 @@
               <b class="price">₺500</b>
             </div>
             <div class="listing-btn">
-              <a href="#">
+              <a
+                href="#"
+                onclick="addToCart('necklace1', 'Ay Taşı Kolye', 500, 'necklace1.webp')"
+              >
                 <i class="fas fa-plus"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-product-id="necklace2">
           <div class="box-head">
             <a href="#" class="name">Multilayer Kolye</a>
           </div>
@@ -104,13 +78,16 @@
               <b class="price">₺500</b>
             </div>
             <div class="listing-btn">
-              <a href="#">
+              <a
+                href="#"
+                onclick="addToCart('necklace2', 'Multilayer Kolye', 500, 'necklace2.webp')"
+              >
                 <i class="fas fa-plus"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-product-id="necklace3">
           <div class="box-head">
             <a href="#" class="name">İnci - Yıldız Kolye</a>
           </div>
@@ -122,7 +99,10 @@
               <b class="price">₺500</b>
             </div>
             <div class="listing-btn">
-              <a href="#">
+              <a
+                href="#"
+                onclick="addToCart('necklace3', 'İnci - Yıldız Kolye', 500, 'necklace3.webp')"
+              >
                 <i class="fas fa-plus"></i>
               </a>
             </div>
@@ -130,7 +110,7 @@
         </div>
       </div>
     </section>
-    <!-- listing end -->
+    <!-- listing necklaces end -->
 
     <!-- footer section start -->
     <section class="footer">

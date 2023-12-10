@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOKKOM Accessories</title>
 
-    <!-- icon kütüphanesi -->
+    <!-- Icon kütüphanesi -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header start -->
+    <!-- Header başlangıç -->
     <header class="header">
       <a href="index.html">
         <img src="logos.webp" class="logo" alt="" />
@@ -28,56 +28,27 @@
         <a href="#about">Siparişler Hakkında</a>
         <a href="contact.html">İletişim</a>
       </nav>
-      <!-- Sepete elle eklenen ürünler start -->
+      <!-- Sepete elle eklenen ürünler başlangıç -->
       <div class="buttons">
         <button id="buttonsShoping">
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
-      <div class="cart-items-container" id="cardContainer">
-        <div class="empty-cart-message" id="emptyCartMessage">
-          Sepetinizde ürün bulunmamaktadır.
-      </div>
-        <div class="cart-item" id="cartItem1">
-          <i class="fas fa-times" onclick="deleteCartItem('cartItem1')"></i>
-          <img src="bracelet.webp" alt="">
-          <div class="content">
-            <h3>cart item 1</h3>
-            <div class="price">300₺</div>
-          </div>
-        </div>
-        <div class="cart-item" id="cartItem2">
-          <i class="fas fa-times" onclick="deleteCartItem('cartItem2')"></i>
-          <img src="hugring.webp" alt="">
-          <div class="content">
-            <h3>cart item 2</h3>
-            <div class="price">300₺</div>
-          </div>
-        </div>
-        <div class="cart-item" id="cartItem3">
-          <i class="fas fa-times" onclick="deleteCartItem('cartItem3')"></i>
-          <img src="necklace.webp" alt="">
-          <div class="content">
-            <h3>cart item 3</h3>
-            <div class="price">300₺</div>
-          </div>
-        </div>
-        <a href="#" class="btn">Sipariş Oluştur</a>
-      </div>
-         <!-- Sepete elle eklenen ürünler end -->
+      <div class="cart-items-container" id="cardContainer"></div>
+      <!-- Sepete elle eklenen ürünler son -->
     </header>
-    <!-- header end -->
+    <!-- Header son -->
 
-    <!-- home start -->
+    <!-- Anasayfa başlangıç -->
     <section class="home">
       <div class="content">
         <h3>"Her mücevher parçası bir hikaye anlatır."</h3>
-        <p> ~ Gem Hunt</p>
+        <p>~ Gem Hunt</p>
       </div>
     </section>
-    <!-- home end -->
+    <!-- Anasayfa son -->
 
-    <!-- products start -->
+    <!-- Ürünler başlangıç -->
     <section class="products">
       <h1 class="heading">Ürünler</h1>
       <div class="box-container">
@@ -88,64 +59,88 @@
           </div>
           <div class="box-bottom">
             <a href="necklace.html" class="btn">Ürünleri Gör</a>
-            </div>
           </div>
-          <div class="box">
-            <div class="box-head">
-              <img src="bracelet.webp" alt="Bileklik" />
-              <h3>Bileklikler</h3>
-            </div>
-            <div class="box-bottom">
-              <a href="bracelet.html" class="btn">Ürünleri Gör</a>
-            </div>
-            </div>
-            <div class="box">
-              <div class="box-head">
-                <img src="hugring.webp" alt="Yüzük" />
-                <h3>Yüzükler</h3>
-              </div>
-              <div class="box-bottom">
-                <a href="ring.html" class="btn">Ürünleri Gör</a>
-              </div>
-              </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="bracelet.webp" alt="Bileklik" />
+            <h3>Bileklikler</h3>
+          </div>
+          <div class="box-bottom">
+            <a href="bracelet.html" class="btn">Ürünleri Gör</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="hugring.webp" alt="Yüzük" />
+            <h3>Yüzükler</h3>
+          </div>
+          <div class="box-bottom">
+            <a href="ring.html" class="btn">Ürünleri Gör</a>
+          </div>
         </div>
       </div>
     </section>
-    <!-- products end -->
+    <!-- Ürünler son -->
 
-    <!-- about section start -->
+    <!-- Hakkımızda başlangıç -->
     <section id="about" class="about">
       <h1 class="heading">Siparişler Hakkında</h1>
       <div class="row">
         <div class="image">
-          <img src="necklaces.jpg" alt="about">
+          <img src="necklaces.jpg" alt="about" />
         </div>
         <div class="content">
           <h3>Yerel Siparişler</h3>
-          <p>Ürünler ertesi gün kargoya verilir. Tahmini teslimat süresi 3-5 iş günüdür. Paketiniz gönderildikten sonra bizden bir takip numarası ve doğrudan takip edebileceğiniz bir bağlantı içeren bir e-posta alacaksınız.</p>
+          <p>
+            Ürünler ertesi gün kargoya verilir. Tahmini teslimat süresi 3-5 iş
+            günüdür. Paketiniz gönderildikten sonra bizden bir takip numarası ve
+            doğrudan takip edebileceğiniz bir bağlantı içeren bir e-posta
+            alacaksınız.
+          </p>
           <h3>Uluslararası Siparişler</h3>
-          <p>Ürünler ertesi gün kargoya verilir. Uluslararası nakliye süresi 7-15 gündür. Bu durum gümrükleme ve diğer değişkenlere bağlı olarak değişiklik gösterebilir. Paketiniz gönderildikten sonra bizden bir takip numarası ve doğrudan takip edebileceğiniz bir bağlantı içeren bir e-posta alacaksınız. Müşteriler, kendi ülkelerinin belirlediği tüm gümrük vergilerinden sorumludur.</p>
+          <p>
+            Ürünler ertesi gün kargoya verilir. Uluslararası nakliye süresi 7-15
+            gündür. Bu durum gümrükleme ve diğer değişkenlere bağlı olarak
+            değişiklik gösterebilir. Paketiniz gönderildikten sonra bizden bir
+            takip numarası ve doğrudan takip edebileceğiniz bir bağlantı içeren
+            bir e-posta alacaksınız. Müşteriler, kendi ülkelerinin belirlediği
+            tüm gümrük vergilerinden sorumludur.
+          </p>
         </div>
       </div>
     </section>
-    <!-- about section end -->
+    <!-- Hakkımızda son -->
 
-    <!-- footer section start -->
+    <!-- Footer başlangıç -->
     <section class="footer">
       <div class="email">
-        <input type="text" class="email-input" placeholder="E-mail adresinizi giriniz">
-        <button class="btn btn-primary"> Abone Olun </button>
+        <input
+          type="text"
+          class="email-input"
+          placeholder="E-mail adresinizi giriniz"
+        />
+        <button class="btn btn-primary">Abone Olun</button>
       </div>
       <div class="share">
         <a href="#" class="fab fa-facebook"></a>
-        <a href="https://www.instagram.com/mokkomaccessories/" class="fab fa-instagram"></a>
-        <a href="https://tr.pinterest.com/MokkomAccessories" class="fab fa-pinterest"></a>
+        <a
+          href="https://www.instagram.com/mokkomaccessories/"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://tr.pinterest.com/MokkomAccessories"
+          class="fab fa-pinterest"
+        ></a>
         <a href="#" class="fab fa-linkedin"></a>
-        <a href="https://www.etsy.com/shop/MokkomAccessories" class="fab fa-etsy"></a>
+        <a
+          href="https://www.etsy.com/shop/MokkomAccessories"
+          class="fab fa-etsy"
+        ></a>
       </div>
       <div class="time" id="zaman"></div>
     </section>
-    <!-- footer section end -->
+    <!-- Footer son -->
 
     <script src="script.js"></script>
   </body>
