@@ -1,4 +1,7 @@
 "use strict";
+/* Strict modu: hatalı kodlama alışkanlıklarını tespit etmek ve
+ belirli hataların oluşmasını engellemek amacıyla kullanılır. 
+ Bu sayede, daha güvenli ve tutarlı bir kod yazma süreci sağlanır. */
 
 let cartItems = [];
 const cardContainer = document.getElementById("cardContainer");
@@ -7,7 +10,7 @@ const orderButton = document.getElementById("orderButton");
 const buttonsShoping = document.getElementById("buttonsShoping");
 
 function addToCartArray(item) {
-  // Eğer ürün zaten sepette varsa miktarını artır
+  // Eğer ürün zaten sepette var ise  miktarını artır
   const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
   if (existingItem) {
     existingItem.quantity += 1;
@@ -89,7 +92,7 @@ function updateCart() {
 
   // orderButton ve emptyCartMessage elemanlarını ekleyerek sırayı değiştir
   const orderButtonHTML = `
-    <a href="#" class="btn" id="orderButton">Sipariş Oluştur</a>
+    <a href="survey.html" class="btn" id="orderButton">Sipariş Oluştur</a>
   `;
   const emptyMessageHTML = `
   <div class="empty-cart-message" id="emptyCartMessage">
@@ -142,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ---------------------------------------------------------------------------------------------- */
-// Footer'a anlık saat ve tarih bilgisi eklendi
+// Footer'a anlık saat ve tarih bilgisi ekle
 function tarihSaat() {
   var date = new Date().toLocaleString("tr-TR");
   document.getElementById("zaman").innerHTML = date;
@@ -152,3 +155,10 @@ function tarihSaat() {
 setInterval(tarihSaat, 100);
 
 /* ---------------------------------------------------------------------------------------------- */
+// Survey geri bildirimi
+function submitSurvey() {
+  var satisfactionValue = document.getElementById("satisfaction").value;
+  var resultElement = document.getElementById("result");
+  resultElement.innerHTML =
+    "Anket geri bildiriminiz için teşekkür ederiz. Bir sonraki alışverişte kullanabileceğiniz indirim kuponunuz : MOK40";
+}

@@ -15,7 +15,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: 0.4s ease;
 }
 
@@ -513,5 +513,79 @@ section {
 .bootstrapicon .phone {
   margin-left: 1rem;
 }
-
 /* bootstrap icon at footer end*/
+
+/* survey start */
+.created {
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.survey {
+  background-image: url(dark_banner.jpeg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  height: 50vh;
+}
+
+.btn-survey {
+  border: none;
+  padding: 10px 20px;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: var(--black-color);
+  cursor: pointer;
+}
+
+.btn-survey:hover {
+  background-color: white;
+  color: var(--black-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 1.7rem;
+}
+
+select {
+  padding: 8px;
+  width: 30rem;
+  height: 8rem;
+  background-color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.survey h1 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* JavaScript'ten dönen anket sonucu CSS'i */
+#result {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--black-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* survey end */
