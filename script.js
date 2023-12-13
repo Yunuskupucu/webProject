@@ -30,19 +30,19 @@ function addToCartArray(item) {
   location.reload(); // Sayfayı yenile
 }
 
-// Verileri localStorage'a kaydetme
+// cardItems dizi verilerini JSON formatına dönüştürerek localStorage üzerine kaydeder
 function saveCartToLocalStorage() {
-  console.log("Saving cart to local storage");
+  console.log("Saving cart to local storage"); // Konsolda kontrol et
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
 
-// localStorage'dan verileri yükleme
+// verileri localStorage'dan yükler ve sayfa yenilendiğinde sepeti günceller
 function loadCartFromLocalStorage() {
   console.log("Loading cart from local storage");
   const storedCartItems = localStorage.getItem("cartItems");
 
   if (storedCartItems) {
-    console.log("Stored cart items found");
+    console.log("Stored cart items found"); // Konsolda kontrol et
     cartItems = JSON.parse(storedCartItems);
     updateCart();
   } else {
