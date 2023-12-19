@@ -160,5 +160,5 @@ function submitSurvey() {
   var satisfactionValue = document.getElementById("satisfaction").value;
   var resultElement = document.getElementById("result");
   resultElement.innerHTML =
-    "Anket geri bildiriminiz için teşekkür ederiz. Bir sonraki alışverişte kullanabileceğiniz indirim kuponunuz : MOK40";
+    'Anket geri bildiriminiz için teşekkür ederiz. Bir sonraki alışverişte kullanabileceğiniz indirim kuponunuz : "MOK40"';
 }

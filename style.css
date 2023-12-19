@@ -342,7 +342,7 @@ section {
 .footer {
   background-color: var(--black-color);
   text-align: center;
-  height: 20rem;
+  height: 21rem;
 }
 
 .footer .email {
@@ -388,22 +388,6 @@ section {
 }
 
 /* footer end */
-
-/* responsive start */
-/* @media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-
-  .header {
-    padding: 1.5rem 2rem;
-  }
-
-  .header .logo img {
-    height: 7rem;
-  }
-} */
-/* responsive end */
 
 /* listing start */
 .listing .box-container {
@@ -472,12 +456,6 @@ section {
   position: relative;
   z-index: 10;
 }
-
-/* .listing .box-container .box-bottom .info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
 
 .listing .box-container .box-bottom .info .price {
   font-size: 3.5rem;
