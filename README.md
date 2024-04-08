@@ -1,5 +1,5 @@
 ## HTML, CSS ve JavaScript teknolojilerini kullanarak oluşturduğum klon bir E-ticaret sitesini sizlere sunarım.
-<br>
+<br/>
 <img width="1440" alt="Ekran Resmi 2024-04-09 01 03 51" src="https://github.com/Yunuskupucu/webProject/assets/107491954/214d29cf-c5a2-4053-994e-c4222b2ad589">
 <hr>
 <img width="1440" alt="Ekran Resmi 2024-04-09 01 04 11" src="https://github.com/Yunuskupucu/webProject/assets/107491954/40ee4768-0197-499d-8a2f-ff000d398bfb">
